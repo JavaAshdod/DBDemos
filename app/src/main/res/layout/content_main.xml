@@ -13,8 +13,29 @@
     tools:showIn="@layout/activity_main"
     tools:context="tomer.edu.dbdemos.MainActivity">
 
-    <TextView
-        android:text="Hello World!"
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Title"
+        android:id="@+id/etTitle"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:hint="Description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/etDescription"
+        android:layout_below="@+id/etTitle"
+        android:layout_centerHorizontal="true" />
+
+    <Button
+        android:onClick="save"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:text="Save"
+        android:id="@+id/btnSave"
+        android:layout_below="@+id/etDescription"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true" />
 </RelativeLayout>
